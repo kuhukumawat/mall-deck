@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-outfit), Arial, Helvetica, sans-serif;
+  --color-background: #0a0a0a;
+  --color-foreground: #ededed;
+  --color-gold: #D4AF37;
+  --color-gold-light: #F3E5AB;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+  
+  .glass-dark {
+    @apply bg-black/40 backdrop-blur-xl border border-white/5;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-white/50;
+  }
+  
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#D4AF37] to-[#F3E5AB];
+  }
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  overflow-x: hidden;
+}
