@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -8,8 +10,9 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Mall Deck | A Global Stage for Brands",
-  description: "Where retail, entertainment, and culture converge at scale.",
+  title: "THE MALL | Luxury Global Destination",
+  description: "Experience the pinnacle of modern luxury, retail, and culture at the world's most prestigious destination.",
+
 };
 
 export default function RootLayout({
@@ -20,7 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${outfit.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans bg-black text-white selection:bg-white selection:text-black">
-        {children}
+        <Nav />
+        <main className="flex-1">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

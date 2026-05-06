@@ -52,7 +52,7 @@ export default function Hero() {
 
                 <motion.h1
                     variants={fadeUp}
-                    className="text-5xl md:text-8xl font-bold leading-[1.1] tracking-tight text-white mb-6"
+                    className="text-4xl md:text-9xl font-bold leading-[1.1] tracking-tight text-white mb-6"
                 >
                     A Global Stage <br className="hidden md:block" />
                     <span className="text-gradient-gold italic pr-2">for Brands</span>

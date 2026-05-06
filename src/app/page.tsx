@@ -1,5 +1,6 @@
 import Dining from "@/sections/Dining/Dining";
 import Entertainment from "@/sections/Entertainment/Entertainment";
+import Events from "@/sections/Events/Events";
 import Hero from "@/sections/Hero/Hero";
 import Luxury from "@/sections/Luxury/Luxury";
 import Retail from "@/sections/Retail/Retail";
@@ -15,6 +16,7 @@ export default function Home() {
       <Dining />
       <Retail />
       <Entertainment />
+      <Events />
     </>
   );
 }

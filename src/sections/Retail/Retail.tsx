@@ -15,15 +15,15 @@ const midBrands = [
 
 export default function Retail() {
     return (
-        <section className="py-32 bg-[#050505] text-white overflow-hidden relative border-t border-white/5">
+        <section id="retail" className="py-20 md:py-32 bg-[#050505] text-white overflow-hidden relative border-t border-white/5">
 
-            <div className="px-6 max-w-6xl mx-auto mb-20 relative z-10">
+            <div className="px-6 max-w-6xl mx-auto mb-12 md:mb-20 relative z-10">
                 <motion.h2
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="text-3xl md:text-5xl font-bold tracking-tight mb-4"
+                    className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tight mb-4"
                 >
                     A Curated <span className="text-gradient-gold">Ecosystem</span>
                 </motion.h2>
@@ -32,17 +32,17 @@ export default function Retail() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: 0.1 }}
-                    className="text-white/50 text-base md:text-lg max-w-xl"
+                    className="text-white/50 text-sm md:text-lg max-w-xl font-light leading-relaxed"
                 >
                     From haute couture to cutting-edge technology, experience the most coveted brands in the world.
                 </motion.p>
             </div>
 
             {/* Gradient Masks for Marquee */}
-            <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#050505] to-transparent z-10 pointer-events-none" />
-            <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#050505] to-transparent z-10 pointer-events-none" />
+            <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-[#050505] to-transparent z-10 pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-[#050505] to-transparent z-10 pointer-events-none" />
 
-            <div className="flex flex-col gap-6 relative z-0 mt-10 overflow-hidden">
+            <div className="flex flex-col gap-4 md:gap-6 relative z-0 mt-6 md:mt-10 overflow-hidden">
                 <MarqueeRow brands={topBrands} direction={-1} speed={40} />
                 <MarqueeRow brands={midBrands} direction={1} speed={35} />
             </div>
@@ -51,7 +51,15 @@ export default function Retail() {
     );
 }
 
-function MarqueeRow({ brands, direction, speed }: { brands: any[], direction: number, speed: number }) {
+interface CardProps {
+    brands: {
+        name: string;
+        image: string;
+    }[];
+    direction: number;
+    speed: number;
+}
+function MarqueeRow({ brands, direction, speed }: CardProps) {
 
     const repeatedBrands = Array(12).fill(brands).flat();
 
@@ -69,7 +77,7 @@ function MarqueeRow({ brands, direction, speed }: { brands: any[], direction: nu
                         src={brand.image}
                         alt={brand.name}
                         fill
-                        className="object-cover opacity-40 group-hover:opacity-70 group-hover:scale-110 transition-all duration-700"
+                        className="object-cover opacity-80 group-hover:opacity-70 group-hover:scale-110 transition-all duration-700"
                         sizes="300px"
                     />
 

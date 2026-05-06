@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# THE MALL – Premium Digital Destination
 
-## Getting Started
+![Project Hero](https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?q=80&w=2070&auto=format&fit=crop)
 
-First, run the development server:
+A state-of-the-art, high-end digital experience for a luxury mall destination. This project showcases the pinnacle of modern web design, blending immersive visuals with seamless, high-performance interactions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 Project Overview
+**THE MALL** is designed to reflect the opulence and scale of a world-class luxury shopping center. Every pixel is crafted to evoke a sense of exclusivity, from the glassmorphic navigation to the cinema-grade image assets. The platform serves as a digital stage for global brands, fine dining, and immersive entertainment.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Tech Stack
+- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Assets**: Optimized `.webp` imagery and custom SVG iconography.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Key Features
+- **Immersive Hero Section**: Full-screen video background with glassmorphic typography overlays.
+- **Smart Navigation**: Floating pill-style navbar with intelligent hide-on-scroll logic and active section highlighting.
+- **Mobile-First Design**: Fully responsive bento grids and split-layout sections tailored for every device.
+- **Bento Grid Layouts**: High-performance grids for "Why Us" and "Dining" sections with custom hover states.
+- **Luxury Brand Marquee**: Smooth, infinite-looping horizontal scrollers showcasing prestigious global brands.
+- **Premium Reservation Dialog**: A sleek, glassmorphic "Visit Us" form for guest inquiries.
+- **Animated Mobile Menu**: Custom-coded hamburger transition and responsive dropdown.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🤖 AI Tools Used
+This project was built using cutting-edge AI orchestration:
+- **Antigravity (Advanced Agentic Coding)**: Primary AI pair programmer for architecture, logic, and visual styling.
+- **AI Image Generation**: Custom-generated visuals for architecture (`why_architecture`), fine dining, and events, ensuring a unique and premium aesthetic.
+- **Asset Optimization**: AI-driven batch conversion to optimized `.webp` formats for lightning-fast load times.
 
-## Learn More
+## 🛠️ How to Run
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
+- Node.js 18.x or later
+- npm or yarn
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Crafted for Excellence. Built for the Future.*
