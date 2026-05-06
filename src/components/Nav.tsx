@@ -56,15 +56,15 @@ export default function Nav() {
                 }}
                 animate={hidden ? "hidden" : "visible"}
                 transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                className="fixed top-4 md:top-8 left-1/2 -translate-x-1/2 w-[90%] md:w-auto z-50"
+                className="fixed top-4 md:top-8 left-1/2 -translate-x-1/2 w-[95%] md:w-auto z-50 max-w-full"
             >
-                <div className="bg-black/40 backdrop-blur-xl text-white px-4 md:px-8 py-3 rounded-full flex items-center justify-between md:justify-start gap-4 md:gap-8 border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.8)]">
-                    <Link href="/" className="text-white font-bold tracking-widest text-base md:text-lg border-r border-white/10 pr-4 md:pr-6 hover:text-[#D4AF37] transition-colors">
+                <div className="bg-black/40 backdrop-blur-xl text-white px-4 md:px-8 py-3 rounded-full flex items-center justify-between gap-4 md:gap-8 border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.8)]">
+                    <Link href="/" className="text-white font-bold tracking-widest text-sm md:text-lg border-r border-white/10 pr-4 md:pr-6 hover:text-[#D4AF37] transition-colors whitespace-nowrap flex-shrink-0">
                         THE <span className="text-gradient-gold">MALL</span>
                     </Link>
 
                     {/* Desktop Links */}
-                    <div className="hidden lg:flex items-center gap-8 text-xs font-semibold uppercase tracking-[0.2em]">
+                    <div className="hidden lg:flex items-center gap-6 xl:gap-8 text-xs font-semibold uppercase tracking-[0.2em] whitespace-nowrap">
                         {navLinks.map((link) => (
                             <a 
                                 key={link.name} 
@@ -84,10 +84,10 @@ export default function Nav() {
                         ))}
                     </div>
 
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
                         <button 
                             onClick={() => setIsDialogOpen(true)}
-                            className="bg-white text-black px-5 md:px-6 py-2 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest hover:bg-[#D4AF37] transition-all duration-500 hover:scale-105 active:scale-95"
+                            className="bg-white text-black px-4 md:px-6 py-2 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest hover:bg-[#D4AF37] transition-all duration-500 hover:scale-105 active:scale-95 whitespace-nowrap"
                         >
                             Visit Us
                         </button>
@@ -97,9 +97,9 @@ export default function Nav() {
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                             className="lg:hidden p-2 text-white/50 hover:text-white transition-colors"
                         >
-                            <div className="w-6 h-5 flex flex-col justify-between items-end">
+                            <div className="w-5 h-4 flex flex-col justify-between items-end">
                                 <motion.span 
-                                    animate={isMobileMenuOpen ? { rotate: 45, y: 8, width: "100%" } : { rotate: 0, y: 0, width: "100%" }}
+                                    animate={isMobileMenuOpen ? { rotate: 45, y: 7, width: "100%" } : { rotate: 0, y: 0, width: "100%" }}
                                     className="h-[2px] bg-white rounded-full"
                                 />
                                 <motion.span 
@@ -107,7 +107,7 @@ export default function Nav() {
                                     className="h-[2px] bg-white rounded-full"
                                 />
                                 <motion.span 
-                                    animate={isMobileMenuOpen ? { rotate: -45, y: -10, width: "100%" } : { rotate: 0, y: 0, width: "100%" }}
+                                    animate={isMobileMenuOpen ? { rotate: -45, y: -7, width: "100%" } : { rotate: 0, y: 0, width: "100%" }}
                                     className="h-[2px] bg-white rounded-full"
                                 />
                             </div>
