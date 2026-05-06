@@ -45,7 +45,7 @@ export default function Hero() {
                 className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 max-w-5xl mx-auto"
             >
                 <motion.div variants={fadeUp} className="mb-6">
-                    <span className="glass-dark px-4 py-2 rounded-full text-xs font-medium uppercase tracking-widest text-white/80">
+                    <span className="glass-dark px-4 py-2 rounded-full text-xs font-medium uppercase tracking-widest text-white/95">
                         Welcome to the Future
                     </span>
                 </motion.div>
@@ -60,16 +60,22 @@ export default function Hero() {
 
                 <motion.p
                     variants={fadeUp}
-                    className="text-base md:text-xl max-w-2xl text-white/70 font-light leading-relaxed"
+                    className="text-base md:text-xl max-w-2xl text-white/85 font-light leading-relaxed"
                 >
                     Where retail, entertainment, and culture converge at an unprecedented scale. Experience the pinnacle of modern luxury.
                 </motion.p>
 
                 <motion.div variants={fadeUp} className="mt-12 flex gap-4">
-                    <button className="px-8 py-4 bg-white text-black rounded-full font-medium tracking-wide hover:bg-[#F3E5AB] transition-colors duration-300">
+                    <button 
+                        aria-label="Explore store directory"
+                        className="px-8 py-4 bg-white text-black rounded-full font-medium tracking-wide hover:bg-[#F3E5AB] transition-colors duration-300"
+                    >
                         Explore Directory
                     </button>
-                    <button className="glass px-8 py-4 rounded-full font-medium tracking-wide text-white hover:bg-white/10 transition-colors duration-300">
+                    <button 
+                        aria-label="Request VIP access"
+                        className="glass px-8 py-4 rounded-full font-medium tracking-wide text-white hover:bg-white/10 transition-colors duration-300"
+                    >
                         VIP Access
                     </button>
                 </motion.div>
@@ -82,11 +88,11 @@ export default function Hero() {
                 transition={{ delay: 1.5, duration: 1 }}
                 className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
             >
-                <span className="text-xs uppercase tracking-widest text-white/50">Scroll</span>
+                <span className="text-xs uppercase tracking-widest text-white/70">Scroll</span>
                 <motion.div
                     animate={{ y: [0, 10, 0] }}
                     transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-                    className="w-[1px] h-12 bg-gradient-to-b from-white/50 to-transparent"
+                    className="w-[1px] h-12 bg-gradient-to-b from-white/70 to-transparent"
                 />
             </motion.div>
         </section>

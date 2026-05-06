@@ -32,7 +32,7 @@ export default function Retail() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: 0.1 }}
-                    className="text-white/50 text-sm md:text-lg max-w-xl font-light leading-relaxed"
+                    className="text-white/80 text-sm md:text-lg max-w-xl font-light leading-relaxed"
                 >
                     From haute couture to cutting-edge technology, experience the most coveted brands in the world.
                 </motion.p>

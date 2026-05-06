@@ -27,7 +27,7 @@ export default function Why() {
                     <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 tracking-tight">
                         Why This <span className="text-gradient-gold italic pr-2">Destination</span>
                     </h2>
-                    <p className="text-gray-500 text-base md:text-xl max-w-2xl font-light leading-relaxed">
+                    <p className="text-gray-700 text-base md:text-xl max-w-2xl font-light leading-relaxed">
                         Unmatched scale, unparalleled luxury, and a continuous pulse of global culture. We redefine the physical retail experience.
                     </p>
                 </motion.div>
@@ -53,7 +53,7 @@ export default function Why() {
                         <div className="absolute bottom-6 left-6 right-6 md:bottom-12 md:left-12">
                             <h3 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-2 drop-shadow-lg">100M+</h3>
                             <h4 className="text-lg md:text-2xl font-medium text-[#D4AF37] mb-2 tracking-wide">Annual Visitors</h4>
-                            <p className="text-white/70 text-sm md:text-lg max-w-md font-light">A constant flow of global consumers converging at the intersection of commerce and culture.</p>
+                            <p className="text-white/85 text-sm md:text-lg max-w-md font-light">A constant flow of global consumers converging at the intersection of commerce and culture.</p>
                         </div>
                     </motion.div>
 
@@ -68,7 +68,7 @@ export default function Why() {
                             <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity duration-500 text-6xl md:text-8xl font-bold">01</div>
                             <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-500 mb-2 relative z-10">1,200+</h3>
                             <h4 className="text-lg md:text-xl font-medium text-gray-900 mb-2 relative z-10">Retail Stores</h4>
-                            <p className="text-gray-500 text-sm md:text-base font-light relative z-10">The world&#39;s leading luxury and lifestyle brands curated in one sprawling ecosystem.</p>
+                            <p className="text-gray-700 text-sm md:text-base font-light relative z-10">The world&#39;s leading luxury and lifestyle brands curated in one sprawling ecosystem.</p>
                         </motion.div>
 
                         <motion.div
@@ -80,7 +80,7 @@ export default function Why() {
                             <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity duration-500 text-6xl md:text-8xl font-bold">02</div>
                             <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#D4AF37] to-[#F3E5AB] mb-2 relative z-10">Global</h3>
                             <h4 className="text-xl font-medium text-gray-900 mb-2 relative z-10">Audience Reach</h4>
-                            <p className="text-gray-500 text-sm md:text-base font-light relative z-10">A nexus connecting diverse cultures, international tourists, and premium demographics.</p>
+                            <p className="text-gray-700 text-sm md:text-base font-light relative z-10">A nexus connecting diverse cultures, international tourists, and premium demographics.</p>
                         </motion.div>
                     </div>
 

@@ -50,11 +50,14 @@ export default function Entertainment() {
                             <span className="text-gradient-gold italic pr-2">Attractions</span>
                         </h2>
                         
-                        <p className="text-base md:text-xl text-gray-500 leading-relaxed mb-8 md:mb-10 max-w-xl font-light">
+                        <p className="text-base md:text-xl text-gray-700 leading-relaxed mb-8 md:mb-10 max-w-xl font-light">
                             From world-class kinetic art installations to breathtaking immersive environments, discover spaces designed to captivate your senses and elevate every visit.
                         </p>
 
-                        <button className="bg-black text-white w-full md:w-auto px-8 py-4 rounded-full font-medium tracking-wide hover:bg-[#D4AF37] hover:text-black transition-all duration-500">
+                        <button 
+                            aria-label="Explore mall attractions and entertainment"
+                            className="bg-black text-white w-full md:w-auto px-8 py-4 rounded-full font-medium tracking-wide hover:bg-[#D4AF37] hover:text-black transition-all duration-500"
+                        >
                             Explore Attractions
                         </button>
                     </motion.div>

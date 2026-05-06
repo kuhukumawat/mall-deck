@@ -53,7 +53,7 @@ export default function Dining() {
                             Dining & <span className="text-gradient-gold italic pr-2">Lifestyle</span>
                         </h2>
                     </div>
-                    <p className="text-gray-500 text-base md:text-lg max-w-sm md:text-right font-light leading-relaxed">
+                    <p className="text-gray-700 text-base md:text-lg max-w-sm md:text-right font-light leading-relaxed">
                         Savor a world of culinary masterpieces curated for the most discerning palates.
                     </p>
                 </motion.div>
@@ -93,7 +93,7 @@ function DiningCard({ title, desc, image, span, delay }: CardProps) {
 
             <div className="absolute bottom-0 left-0 p-6 md:p-8 z-10 w-full transform translate-y-2 lg:translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                 <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-2">{title}</h3>
-                <p className="text-white/70 text-xs md:text-base font-light opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">{desc}</p>
+                <p className="text-white/85 text-xs md:text-base font-light opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">{desc}</p>
             </div>
         </motion.div>
     );

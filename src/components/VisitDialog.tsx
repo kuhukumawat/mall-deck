@@ -34,13 +34,14 @@ export default function VisitDialog({ isOpen, onClose }: VisitDialogProps) {
                             <div className="flex justify-between items-start mb-8">
                                 <div>
                                     <h2 className="text-3xl font-bold text-white mb-2">Plan Your <span className="text-gradient-gold italic">Visit</span></h2>
-                                    <p className="text-white/50 text-sm">Experience the pinnacle of luxury and culture.</p>
+                                    <p className="text-white/70 text-sm">Experience the pinnacle of luxury and culture.</p>
                                 </div>
                                 <button 
                                     onClick={onClose}
+                                    aria-label="Close dialog"
                                     className="p-2 hover:bg-white/10 rounded-full transition-colors"
                                 >
-                                    <svg className="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg className="w-6 h-6 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                                     </svg>
                                 </button>
@@ -48,7 +49,7 @@ export default function VisitDialog({ isOpen, onClose }: VisitDialogProps) {
 
                             <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                                 <div className="space-y-2">
-                                    <label className="text-xs font-semibold text-white/40 uppercase tracking-widest ml-1">Full Name</label>
+                                    <label className="text-xs font-semibold text-white/60 uppercase tracking-widest ml-1">Full Name</label>
                                     <input 
                                         type="text" 
                                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] transition-colors"
@@ -58,7 +59,7 @@ export default function VisitDialog({ isOpen, onClose }: VisitDialogProps) {
 
                                 <div className="grid grid-cols-2 gap-4">
                                     <div className="space-y-2">
-                                        <label className="text-xs font-semibold text-white/40 uppercase tracking-widest ml-1">Email</label>
+                                        <label className="text-xs font-semibold text-white/60 uppercase tracking-widest ml-1">Email</label>
                                         <input 
                                             type="email" 
                                             className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] transition-colors"
@@ -66,7 +67,7 @@ export default function VisitDialog({ isOpen, onClose }: VisitDialogProps) {
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-xs font-semibold text-white/40 uppercase tracking-widest ml-1">Date</label>
+                                        <label className="text-xs font-semibold text-white/60 uppercase tracking-widest ml-1">Date</label>
                                         <input 
                                             type="date" 
                                             className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] transition-colors [color-scheme:dark]"
@@ -75,7 +76,7 @@ export default function VisitDialog({ isOpen, onClose }: VisitDialogProps) {
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label className="text-xs font-semibold text-white/40 uppercase tracking-widest ml-1">Message (Optional)</label>
+                                    <label className="text-xs font-semibold text-white/60 uppercase tracking-widest ml-1">Message (Optional)</label>
                                     <textarea 
                                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] transition-colors h-32 resize-none"
                                         placeholder="Tell us about your interests..."

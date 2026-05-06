@@ -59,7 +59,7 @@ export default function Nav() {
                 className="fixed top-4 md:top-8 left-1/2 -translate-x-1/2 w-[95%] md:w-auto z-50 max-w-full"
             >
                 <div className="bg-black/40 backdrop-blur-xl text-white px-4 md:px-8 py-3 rounded-full flex items-center justify-between gap-4 md:gap-8 border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.8)]">
-                    <Link href="/" className="text-white font-bold tracking-widest text-sm md:text-lg border-r border-white/10 pr-4 md:pr-6 hover:text-[#D4AF37] transition-colors whitespace-nowrap flex-shrink-0">
+                    <Link href="/" aria-label="Home" className="text-white font-bold tracking-widest text-sm md:text-lg border-r border-white/10 pr-4 md:pr-6 hover:text-[#D4AF37] transition-colors whitespace-nowrap flex-shrink-0">
                         THE <span className="text-gradient-gold">MALL</span>
                     </Link>
 
@@ -70,7 +70,7 @@ export default function Nav() {
                                 key={link.name} 
                                 href={link.href} 
                                 className={`transition-all duration-300 relative py-1 ${
-                                    activeSection === link.id ? "text-white" : "text-white/40 hover:text-white/80"
+                                    activeSection === link.id ? "text-white" : "text-white/60 hover:text-white/90"
                                 }`}
                             >
                                 {link.name}
@@ -87,6 +87,7 @@ export default function Nav() {
                     <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
                         <button 
                             onClick={() => setIsDialogOpen(true)}
+                            aria-label="Open visit reservation form"
                             className="bg-white text-black px-4 md:px-6 py-2 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest hover:bg-[#D4AF37] transition-all duration-500 hover:scale-105 active:scale-95 whitespace-nowrap"
                         >
                             Visit Us
@@ -95,7 +96,8 @@ export default function Nav() {
                         {/* Mobile Menu Toggle */}
                         <button 
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                            className="lg:hidden p-2 text-white/50 hover:text-white transition-colors"
+                            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+                            className="lg:hidden p-2 text-white/70 hover:text-white transition-colors"
                         >
                             <div className="w-5 h-4 flex flex-col justify-between items-end">
                                 <motion.span 

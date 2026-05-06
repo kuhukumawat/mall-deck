@@ -33,12 +33,15 @@ export default function Luxury() {
                             <span className="text-gradient-gold italic pr-2">True Luxury</span>
                         </h2>
                         
-                        <p className="text-base md:text-xl text-white/60 leading-relaxed mb-8 md:mb-10 max-w-xl font-light">
+                        <p className="text-base md:text-xl text-white/85 leading-relaxed mb-8 md:mb-10 max-w-xl font-light">
                             Home to the world’s most prestigious brands, offering an unmatched
                             luxury retail experience in the heart of a global destination. Step into an environment meticulously crafted for the elite.
                         </p>
 
-                        <button className="glass-dark w-full md:w-auto px-8 py-4 rounded-full font-medium tracking-wide text-white hover:bg-white hover:text-black transition-all duration-500 border border-white/20">
+                        <button 
+                            aria-label="Discover the luxury brand collection"
+                            className="glass-dark w-full md:w-auto px-8 py-4 rounded-full font-medium tracking-wide text-white hover:bg-white hover:text-black transition-all duration-500 border border-white/20"
+                        >
                             Discover The Collection
                         </button>
                     </motion.div>
