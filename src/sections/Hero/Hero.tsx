@@ -33,7 +33,7 @@ export default function Hero() {
             </video>
 
             {/* Premium Glassmorphic & Gradient Overlays */}
-            <div className="absolute inset-0 bg-black/60" />
+            <div className="absolute inset-0 bg-black/10" />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/30" />
             <div className="absolute inset-0 backdrop-blur-[2px]" />
 

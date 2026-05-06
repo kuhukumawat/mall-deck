@@ -55,7 +55,7 @@ export default function Luxury() {
                         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent z-10 opacity-60" />
                         
                         <Image 
-                            src="/images/luxury_interior.png" 
+                            src="/images/luxury_interior.webp" 
                             alt="Luxury Interior" 
                             fill
                             className="object-cover group-hover:scale-105 transition-transform duration-1000 ease-out"

@@ -1,11 +1,16 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const topBrands = [
-    "Chanel", "Louis Vuitton", "Gucci", "Dior", "Prada", "Hermès", "Rolex", "Cartier"
+    { name: "Chanel", image: "/images/brand_chanel.webp" },
+    { name: "Louis Vuitton", image: "/images/brand_lv.webp" },
+    { name: "Rolex", image: "/images/brand_rolex.webp" }
 ];
 const midBrands = [
-    "Apple", "Tesla", "Nike", "Adidas", "Zara", "H&M", "Sephora", "IKEA"
+    { name: "Apple", image: "/images/brand_apple.webp" },
+    { name: "Tesla", image: "/images/brand_tesla.webp" },
+    { name: "Nike", image: "/images/brand_nike.webp" }
 ];
 
 export default function Retail() {
@@ -37,26 +42,44 @@ export default function Retail() {
             <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#050505] to-transparent z-10 pointer-events-none" />
             <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#050505] to-transparent z-10 pointer-events-none" />
 
-            <div className="flex flex-col gap-6 relative z-0 mt-10 w-[200%]">
-                <MarqueeRow brands={[...topBrands, ...topBrands]} direction={-1} speed={40} />
-                <MarqueeRow brands={[...midBrands, ...midBrands]} direction={1} speed={35} />
+            <div className="flex flex-col gap-6 relative z-0 mt-10 overflow-hidden">
+                <MarqueeRow brands={topBrands} direction={-1} speed={40} />
+                <MarqueeRow brands={midBrands} direction={1} speed={35} />
             </div>
 
         </section>
     );
 }
 
-function MarqueeRow({ brands, direction, speed }: { brands: string[], direction: number, speed: number }) {
+function MarqueeRow({ brands, direction, speed }: { brands: any[], direction: number, speed: number }) {
+
+    const repeatedBrands = Array(12).fill(brands).flat();
+
     return (
         <motion.div
             initial={{ x: direction > 0 ? "-50%" : "0%" }}
             animate={{ x: direction > 0 ? "0%" : "-50%" }}
             transition={{ repeat: Infinity, ease: "linear", duration: speed }}
-            className="flex gap-6 whitespace-nowrap"
+            className="flex whitespace-nowrap w-max"
         >
-            {brands.map((name, idx) => (
-                <div key={idx} className="glass px-10 py-5 rounded-2xl min-w-[200px] flex items-center justify-center group hover:bg-white/10 transition-colors duration-500 cursor-pointer border border-white/5">
-                    <p className="text-xl md:text-2xl font-medium text-white/70 group-hover:text-white transition-colors tracking-wide">{name}</p>
+            {repeatedBrands.map((brand, idx) => (
+                <div key={idx} className="relative group overflow-hidden rounded-2xl min-w-[280px] h-[160px] cursor-pointer border border-white/5 mr-6">
+                    {/* Background Image */}
+                    <Image
+                        src={brand.image}
+                        alt={brand.name}
+                        fill
+                        className="object-cover opacity-40 group-hover:opacity-70 group-hover:scale-110 transition-all duration-700"
+                        sizes="300px"
+                    />
+
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent" />
+
+                    {/* Content */}
+                    <div className="absolute inset-0 flex items-center justify-center p-6 text-center">
+                        <p className="text-xl md:text-2xl font-medium text-white/90 group-hover:text-white transition-colors tracking-wide relative z-10">{brand.name}</p>
+                    </div>
                 </div>
             ))}
         </motion.div>

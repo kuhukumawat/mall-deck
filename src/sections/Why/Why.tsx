@@ -8,9 +8,17 @@ const stats = [
     { number: "Global", label: "Audience Reach", desc: "Connecting cultures and commerce.", delay: 0.3, span: "md:col-span-1" },
 ];
 
+type StatCardProps = {
+    number: string;
+    label: string;
+    desc: string;
+    delay: number;
+    span?: string;
+}
+
 export default function Why() {
     return (
-        <section className="py-32 px-6 relative bg-white text-black">
+        <section className="py-32 px-6 relative bg-[#eeeeee] text-black">
 
             {/* Subtle background glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vh] bg-[#D4AF37]/5 rounded-full blur-[120px] pointer-events-none" />
@@ -41,7 +49,7 @@ export default function Why() {
     );
 }
 
-function StatCard({ number, label, desc, delay, span }: any) {
+function StatCard({ number, label, desc, delay, span }: StatCardProps) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-50px" });
 
